@@ -141,7 +141,7 @@ app.post('/api/subscribe', async (req, res) => {
   }
 });
 
-app.get('/api/subscribe', (req, res) => {
+app.get('/subscribe', (req, res) => {
   res.send('Subscribe endpoint: Please use POST to /api/subscribe with your email.');
 });
 
