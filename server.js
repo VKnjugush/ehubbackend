@@ -141,6 +141,10 @@ app.post('/api/subscribe', async (req, res) => {
   }
 });
 
+app.get('/api/subscribe', (req, res) => {
+  res.send('Subscribe endpoint: Please use POST to /api/subscribe with your email.');
+});
+
 // ✅ Serve static frontend in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
